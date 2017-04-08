@@ -1,0 +1,4 @@
+"/Users/kosso/_SERVER/_GITLAB_AMAZING/instore/mobile-app-development/playlister-test-app/modules-sources/audioplayer-android/android/build/generated/java/com/kosso/audioplayerandroid/AudioplayerAndroidBootstrap.java"
+"/Users/kosso/_SERVER/_GITLAB_AMAZING/instore/mobile-app-development/playlister-test-app/modules-sources/audioplayer-android/android/src/com/kosso/audioplayerandroid/AudioplayerAndroidModule.java"
+"/Users/kosso/_SERVER/_GITLAB_AMAZING/instore/mobile-app-development/playlister-test-app/modules-sources/audioplayer-android/android/src/com/kosso/audioplayerandroid/MediaPlayerWrapper.java"
+"/Users/kosso/_SERVER/_GITLAB_AMAZING/instore/mobile-app-development/playlister-test-app/modules-sources/audioplayer-android/android/src/com/kosso/audioplayerandroid/PlayerProxy.java"
