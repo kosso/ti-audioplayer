@@ -355,6 +355,7 @@ function createWindow() {
     }
     player.setUrl(url);
     player.addEventListener('playerstatuschange', ready);
+    // Play when ready
     function ready(e){
       player.removeEventListener('playerstatuschange', ready);
       player.play();
@@ -381,24 +382,14 @@ function createWindow() {
     }
 
     if(live_stream===true){
-
       console.log('LIVE!');
-      
-      console.log(player.streaming);
-
       if(player.playing){
-        
-        console.log('STOP!');
-
-
+        console.log('STOP STREAM');  // It's actually better to destroy streams and reload via the url. 
         player.stop();
       } else {
+        console.log('PLAY STREAM');
         player.play();
       }
-
-
-
-      //player.stop();
       return;
     }
 
@@ -415,7 +406,7 @@ function createWindow() {
 
 
   // Set an initial audio url  #####################################
-  player.setUrl('');
+  // player.setUrl('');
 
   // With the first load of the player in the app, we need to wait for the player to be initialized by its first url before attempting to play it.
   // Wait for e.status===1 in the 'playerstatuschange event'
