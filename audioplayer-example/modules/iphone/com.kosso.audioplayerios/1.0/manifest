@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+architectures: armv7 arm64 i386 x86_64
+description: audioplayer-ios
+author: Kosso
+license: MIT
+copyright: 2017 Amazing Media Group
+
+# these should not be edited
+name: audioplayer-ios
+moduleid: com.kosso.audioplayerios
+guid: 7e0e9c2c-a126-4b32-ac41-3e1742cb8039
+platform: iphone
+minsdk: 6.0.1.GA
