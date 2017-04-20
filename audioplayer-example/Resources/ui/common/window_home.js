@@ -353,6 +353,7 @@ function createWindow() {
     if(player.playing || player.paused){
       player.stop();
     }
+    player.destroy(); 
     player.setUrl(url);
     player.addEventListener('playerstatuschange', ready);
     // Play when ready
