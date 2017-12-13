@@ -281,7 +281,7 @@ public class MediaPlayerWrapper
 				mp.setOnInfoListener(null);
 				mp.setOnPreparedListener(null);
 				mp.setOnSeekCompleteListener(null);
-
+				mp.reset();
 				mp.release();
 				mp = null;
 				

@@ -209,7 +209,7 @@ function createWindow() {
     console.log('player ERROR: ', e);
     msg.text = player_status_strings[e.status];
     prog.text = "--:-- / --:--";
-    alert('error!\n\n'+e.message);
+    //alert('error!\n\n'+e.message);
     slider.enabled = false;
   });
 
@@ -323,7 +323,7 @@ function createWindow() {
   });
   slider.addEventListener('stop', function(e){
     //seeking = false; will be set by the seekcomplete event
-    var new_time = parseFloat(player.duration * (e.value / 100) );
+    var new_time = Math.round(player.duration * (e.value / 100) );
     console.log('seek to new time : '+new_time);
     player.seek(new_time);
   });
