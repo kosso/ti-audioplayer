@@ -87,8 +87,10 @@ implements OnLifecycleEvent
 	@Kroll.method
 	public void setUrl(String url) {
 		if (url != null) {
-			// Log.d(LCAT, "setupUrl : url: " + TiConvert.toString(getProperty("url")));
-			setProperty(TiC.PROPERTY_TIME, 0);
+            
+            Log.d(LCAT, "module: setupUrl : url: " + TiConvert.toString(getProperty("url")));
+			
+            setProperty(TiC.PROPERTY_TIME, 0);
 			setProperty(TiC.PROPERTY_DURATION, 0);
 			setProperty(TiC.PROPERTY_URL, resolveUrl(null, url));			
 			release();
